@@ -5,7 +5,9 @@ const routes = require('./routes/index')
 //use express router
 app.use('/',routes);
 
-
+//Setup the view engine
+app.set('view engine','ejs');
+app.set('views','./views');
 
 app.listen(port,function(err){
     if(err){
