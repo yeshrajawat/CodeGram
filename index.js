@@ -11,8 +11,13 @@ app.use(express.static('./assets'))
 // Adding Middleware for express-ejs-layouts
 app.use(expressLayouts);
 
+//extract style and scripts from sub pages into the layout head
+app.set('layout extractStyles',true);
+app.set('layout extractScripts',true);
+
 //use express router
 app.use('/',routes);
+
 
 
 //Setup the view engine
