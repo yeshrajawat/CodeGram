@@ -1,9 +1,19 @@
 const express = require('express');
 const port = 8000;
 const app = express();
-const routes = require('./routes/index')
+const routes = require('./routes/index');
+const expressLayouts = require('express-ejs-layouts');
+
+
+
+// Adding middleware for accessing static files
+app.use(express.static('./assets'))
+// Adding Middleware for express-ejs-layouts
+app.use(expressLayouts);
+
 //use express router
 app.use('/',routes);
+
 
 //Setup the view engine
 app.set('view engine','ejs');
