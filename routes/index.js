@@ -10,7 +10,6 @@ console.log("Router Loaded");
 router.get('/',homeController.home);
 router.use('/users',require('./users'));
 
-
 //For any further routes, access from here
 //router.use('/routerName',require('./routerfile'));
 module.exports = router;
