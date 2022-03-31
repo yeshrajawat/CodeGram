@@ -14,12 +14,23 @@
 
     <section id="feed-posts">
         <h4>Posts</h4>
-        <form action="" id="new-post-form" method="POST">
+        <form action="/posts/create" id="new-post-form" method="POST">
            <textarea name="content" cols="30" rows="3" placeholder="Type Here..."></textarea>
            <input type="submit" value="Post"> 
         </form>
     </section>
-    
+   
+    <section>
+        <div>
+            <% for(let i=0;i<posts.length;i++) {%>
+
+                    <div class="text">
+                        <span id="serial-no"><%=i+1%></span>
+                    <span><%= posts[i].content%></span>
+                    </div>
+                <%}%>
+        </div>
+    </section>
     
 </body>
 </html>

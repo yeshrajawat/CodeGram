@@ -1,9 +1,18 @@
+const Post = require('../model/post');
 module.exports.home = function(req,res){
-   console.log(req.cookies)
-    return res.render('home',{
-        title:"Home"
-    });
-}
+   
+   Post.find({},function(err,allPosts){
+    if(err){
+        console.error("Error in fetching contacts from db");
+    }
+     else{
+        return res.render('home',{
+            title:"Home",
+            posts: allPosts
+        });
+     }
+})
+};
 
 
 /*
