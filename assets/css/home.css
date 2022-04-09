@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+    background: #efefef;
+}
+
+.left-sidebar{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+    flex-basis: 25%;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    
+}
+.right-sidebar{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+    position: sticky;
+    align-self: flex-start;
+    flex-basis: 25%;
+    top: 100px;
+   
+}
+.main-content{
+    
+    flex-basis: 47%;
+
+}
+
+.imp-links a, .shortcut-links a{
+    text-decoration: none;
+    color:#626262;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    width: fit-content;
+}
+.imp-links img {
+    width: 25px;
+    margin-right: 15px;
+}
+.imp-links a:last-child{
+    color: #7A7ADE;
+}
+.imp-links{
+    border-bottom: 1px solid #ccc;
+}
+.shortcut-links a img {
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.shortcut-links p {
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 500;
+}
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.right-sidebar h4{
+    font-weight: 600;
+    font-size: 16px;
+}
+.sidebar-title a {
+    text-decoration: none;
+    color: #7A7ADE;
+    font-size: 12px;
+}
+.event {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.left-event{
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.event p{
+    font-size: 12px;
+}
+.event a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #7A7ADE;
+}
+.left-event span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7A7ADE;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 4px 0px;
+}
+.online-list{
+    display: flex;
+    align-items: 20px;
+    margin-bottom: 20px;
+}
+.online-list .online img {
+    width: 40px;
+    border-radius: 50%;
+
+}
+.online-list .online {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.online-list .online::after{
+    top: unset;
+    bottom: 0;
+}
+
+
+.write-post-container{
+    width: 100%;
+    background: #ffffff;
+    border-radius: 6px;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user-profile p {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: -5px;
+    color: #626262;
+}
+.user-profile small{
+    font-size: 12px;
+}
+
+.post-input-container{
+    padding-left:55px;
+    padding-top: 20px;
+}
+.post-input-container textarea {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #cccccc;
+    background: transparent;
+    resize: none;
+}
+.add-post-links{
+    display: flex;
+    margin-top: 10px;
+
+}
+.add-post-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right:30px;
+    font-size:13px ;
+}
+.add-post-links img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.post-button{
+    background-image: url('/images/post.png');
+    background-size:cover;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    outline: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.post-container{
+
+    width: 100%;
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0px;
+
+}
+.post-container .user-profile span{
+font-size: 13px;
+color: #9a9a9a;
+}
+.post-text{
+    color: #9a9a9a;
+    margin: 15px 0px;
+    font-size: 15px;
+
+}
+.post-img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+.post-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.activity-icons div img{
+    width: 18px;
+    margin-right: 10px;
+}
+.activity-icons div{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}

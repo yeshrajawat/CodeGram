@@ -1,3 +1,17 @@
+*{
+       
+    font-family: system-ui;
+    
+    scroll-behavior: smooth;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+
+
 nav {
     font-family: system-ui;
     display: flex;
@@ -5,7 +19,9 @@ nav {
 
     background: rgb(66, 66, 66);
 
-    box-shadow: 0px 20px 20px -20px  rgba(0,0,0,.8);
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.35);
+box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.35);
 }
 
 .logo{
